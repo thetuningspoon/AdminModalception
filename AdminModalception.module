@@ -1,0 +1,22 @@
+<?php
+class AdminModalception extends WireData implements Module {
+
+	public static function getModuleInfo() {
+
+		return array(
+			'title' => 'Modalception',
+			'version' => '1.0.0',
+			'summary' => 'Stacks "modal" popup windows so that modals can be opened within other modals without the inner windows becoming progressively smaller and less usable. Only the innermost window\'s chrome is made visible to the user to help reduce confusion.',
+			'author' => 'Mike Spooner (thetuningspoon)',
+			'href' => 'http://www.solutioninnovators.com',
+			'singular' => true,
+			'autoload' => 'template=admin',
+			'icon' => 'dot-circle-o',
+		);
+	}
+
+	public function init() {
+		$this->config->scripts->add($this->config->urls->AdminModalception . "AdminModalception.js");
+		$this->config->styles->add($this->config->urls->AdminModalception . "AdminModalception.css");
+	}
+}

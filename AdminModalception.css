@@ -1,0 +1,14 @@
+.modalception-full {
+    position: fixed !important;
+    top:0 !important; right:0 !important; left:0 !important; bottom:0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.modalception-full > .pw-modal-window {
+    width: 100% !important;
+    height: 100% !important;
+    top:0 !important; right:0 !important; left:0 !important; bottom:0 !important;
+}
+.modalception-full > .ui-dialog-titlebar, .modalception-full > .ui-dialog-buttonpane {
+    display: none !important;
+}
