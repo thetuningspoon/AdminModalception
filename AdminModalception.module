@@ -6,7 +6,7 @@ class AdminModalception extends WireData implements Module {
 		return array(
 			'title' => 'Modalception',
 			'version' => '1.0.0',
-			'summary' => 'Stacks "modal" popup windows so that modals can be opened within other modals without the inner windows becoming progressively smaller and less usable. Only the innermost window\'s chrome is made visible to the user to help reduce confusion.',
+			'summary' => "Improves usability of ProcessWire's modal dialog/popup windows when opened from within another modal window",
 			'author' => 'Mike Spooner (thetuningspoon)',
 			'href' => 'http://www.solutioninnovators.com',
 			'singular' => true,
