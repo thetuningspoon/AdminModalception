@@ -1,12 +1,9 @@
 $(document).ready(function() {
     // Stack modal windows
     $(document).on('pw-modal-opened', function() {
-        console.log('modal opened');
+        // console.log('modal opened');
         if(window !== top) { // The parent window is also a child window
-            console.log('Parent window is also a child window.');
-            var $iframe = $(this).find('iframe.pw-modal-window');
-            //var $dialogWrapper = $iframe.closest('.ui-dialog');
-            //var $contents = $iframe.contents();
+            // console.log('Parent window is also a child window.');
             var $parentDoc = $(parent.document);
             var $parentIframe = $parentDoc.find('iframe.pw-modal-window');
             var $parentDialogWrapper = $parentIframe.closest('.ui-dialog');
@@ -18,9 +15,6 @@ $(document).ready(function() {
     });
     $(document).on('pw-modal-closed', function() {
         if(window !== top) { // The parent window is also a child window
-            var $iframe = $(this).find('iframe.pw-modal-window');
-            //var $dialogWrapper = $iframe.closest('.ui-dialog');
-            //var $contents = $iframe.contents();
             var $parentDoc = $(parent.document);
             var $parentIframe = $parentDoc.find('iframe.pw-modal-window');
             var $parentDialogWrapper = $parentIframe.closest('.ui-dialog');

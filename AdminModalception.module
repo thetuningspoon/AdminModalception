@@ -5,7 +5,7 @@ class AdminModalception extends WireData implements Module {
 
 		return array(
 			'title' => 'Modalception',
-			'version' => '1.0.0',
+			'version' => '1.0.1',
 			'summary' => "Improves usability of ProcessWire's modal dialog/popup windows when opened from within another modal window",
 			'author' => 'Mike Spooner (thetuningspoon)',
 			'href' => 'http://www.solutioninnovators.com',
